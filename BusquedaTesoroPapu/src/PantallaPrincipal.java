@@ -19,7 +19,12 @@ public class PantallaPrincipal extends JFrame {
 
     JButton[][] casillas;
 
-    public PantallaPrincipal(){
+    public int jugadoresSeleccionados;
+
+    public PantallaPrincipal(int jugadoresSeleccionados){
+
+        this.jugadoresSeleccionados = jugadoresSeleccionados;
+
         this.setSize(1250, 650);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setTitle("Games");
@@ -32,7 +37,15 @@ public class PantallaPrincipal extends JFrame {
         panelPlayers = new JPanel(new GridLayout(1, maxJugadores)); //contenedor principal
         menu = new JPanel(new GridLayout(1,2)); // panel de la derecha
         cardLayout = new CardLayout();
-        //cartas = new
+        espacioCartas = new JPanel(cardLayout); //espacio de las cartas para el card layout
+
+        tablero = new JPanel(new GridLayout(dimensionesTablero, dimensionesTablero));//tablero de 7x7
+
+
+
+    }
+
+    public void inicializarJugadores(){
 
     }
 
@@ -44,7 +57,7 @@ public class PantallaPrincipal extends JFrame {
 
 
     public static void main(String[] args) {
-        PantallaPrincipal p = new PantallaPrincipal();
+        PantallaPrincipal p = new PantallaPrincipal(3);
         p.setVisible(true);
     }
 }
