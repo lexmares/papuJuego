@@ -32,7 +32,15 @@ public class PantallaPrincipal extends JFrame {
         panelPlayers = new JPanel(new GridLayout(1, maxJugadores)); //contenedor principal
         menu = new JPanel(new GridLayout(1,2)); // panel de la derecha
         cardLayout = new CardLayout();
-        //cartas = new
+        espacioCartas = new JPanel(cardLayout); //espacio de las cartas para el card layout
+
+        tablero = new JPanel(new GridLayout(dimensionesTablero, dimensionesTablero));//tablero de 7x7
+
+
+
+    }
+
+    public void inicializarJugadores(){
 
     }
 
