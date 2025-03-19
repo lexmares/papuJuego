@@ -19,7 +19,12 @@ public class PantallaPrincipal extends JFrame {
 
     JButton[][] casillas;
 
-    public PantallaPrincipal(){
+    public int jugadoresSeleccionados;
+
+    public PantallaPrincipal(int jugadoresSeleccionados){
+
+        this.jugadoresSeleccionados = jugadoresSeleccionados;
+
         this.setSize(1250, 650);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setTitle("Games");
@@ -52,7 +57,7 @@ public class PantallaPrincipal extends JFrame {
 
 
     public static void main(String[] args) {
-        PantallaPrincipal p = new PantallaPrincipal();
+        PantallaPrincipal p = new PantallaPrincipal(3);
         p.setVisible(true);
     }
 }
