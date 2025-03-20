@@ -40,7 +40,7 @@ public class PantallaPrincipal extends JFrame {
         espacioCartas = new JPanel(cardLayout); //espacio de las cartas para el card layout
 
         tablero = new JPanel(new GridLayout(dimensionesTablero, dimensionesTablero));//tablero de 7x7
-
+        //panel para usar los botones
 
 
     }
