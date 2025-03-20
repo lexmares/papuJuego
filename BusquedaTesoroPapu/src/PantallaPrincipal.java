@@ -10,6 +10,7 @@ public class PantallaPrincipal extends JFrame {
     JLabel[] jugadores;
 
     JPanel menu;
+    JPanel prueba;
     JPanel tablero;
     JPanel espacioCartas;
     CardLayout cardLayout;
