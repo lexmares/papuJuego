@@ -42,6 +42,7 @@ public class PantallaPrincipal extends JFrame {
         tablero = new JPanel(new GridLayout(dimensionesTablero, dimensionesTablero));//tablero de 7x7
         //panel para usar los botones
 
+        //comentario de prueba
 
     }
 
